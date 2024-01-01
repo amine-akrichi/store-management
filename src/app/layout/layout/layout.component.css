@@ -1,0 +1,68 @@
+.wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  height: 50px;
+  padding: 10px;
+}
+
+.logo svg{
+  color: #068fff;
+  height: 50px;
+}
+
+.logo span{
+  font-size: 1.2rem;
+}
+
+.sidenav {
+  width: 350px;
+  height: 100vh;
+  position: fixed;
+  background-color: white;
+  box-shadow: rgba(100, 100, 111, 0.1) 0px 7px 29px 0px;
+}
+
+ul {
+  list-style: none;
+  padding: 50px 10px 0 10px;
+  margin: 0;
+}
+
+li {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 1.2rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 10px 0 10px 0;
+}
+
+li a:hover {
+  color: #068fff;
+}
+
+li a svg {
+  height: 40px;
+  margin-right: 20px;
+}
+
+.active-link{
+  color: #068fff !important;
+}
