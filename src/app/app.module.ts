@@ -13,7 +13,13 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatButtonModule } from '@angular/material/button';
+import { MatDialogModule } from '@angular/material/dialog';
 import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
+import { MatSelectModule } from '@angular/material/select';
+import { MatInputModule } from '@angular/material/input';
+import { UpdateCategoryDialogComponent } from './components/update-category-dialog/update-category-dialog.component';
+import { UpdateProductDialogComponent } from './components/update-product-dialog/update-product-dialog.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +30,8 @@ import { HttpClientModule } from '@angular/common/http';
     ProductsPageComponent,
     CategoriesPageComponent,
     DashboardPageComponent,
+    UpdateCategoryDialogComponent,
+    UpdateProductDialogComponent,
   ],
   imports: [
     BrowserModule,
@@ -32,7 +40,11 @@ import { HttpClientModule } from '@angular/common/http';
     MatTableModule,
     MatPaginatorModule,
     MatButtonModule,
-    HttpClientModule
+    MatDialogModule,
+    HttpClientModule,
+    MatSelectModule,
+    MatInputModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

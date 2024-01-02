@@ -1,0 +1,41 @@
+<div matDialogTitle>
+    <h1>Update product</h1>
+  </div>
+  <div matDialogContent class="wrapper">
+    <mat-form-field appearance="outline">
+      <mat-label>Name</mat-label>
+      <input matInput placeholder="Name" [(ngModel)]="data.name" />
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>Price</mat-label>
+      <input
+        type="number"
+        matInput
+        placeholder="Price"
+        [(ngModel)]="data.price"
+      />
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>Quantity</mat-label>
+      <input
+        type="number"
+        matInput
+        placeholder="Quantity"
+        [(ngModel)]="data.quantity"
+      />
+    </mat-form-field>
+  
+    <mat-form-field appearance="outline">
+      <mat-label>Category</mat-label>
+      <mat-select [(ngModel)]="data.category.id" name="food">
+        @for (category of categoryList; track category) {
+        <mat-option [value]="category.id">{{ category.name }}</mat-option>
+        }
+      </mat-select>
+    </mat-form-field>
+  </div>
+  <div matDialogActions>
+    <button mat-button color="primary" [matDialogClose]="data" cdkFocusInitial>Save</button>
+    <button mat-button mat-dialog-close>Cancel</button>
+  </div>
+  

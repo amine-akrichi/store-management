@@ -7,32 +7,37 @@
     opacity: 1;
   }
 }
-@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Inter&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Inter&display=swap");
 
-html, body { height: 100%; }
-body {  }
+html,
+body {
+  height: 100%;
+}
+body {
+}
 
-*{
-    font-family: 'Poppins', sans-serif;
-    animation: fadeIn 0.2s ease-in;
-    line-height: normal !important;
+* {
+  font-family: "Poppins", sans-serif;
+  animation: fadeIn 0.2s ease-in;
+  line-height: normal !important;
 }
 
 *::-webkit-scrollbar {
-    width: 1vh;
-  }
-  
-  *::-webkit-scrollbar-thumb {
-    border-radius: 5px;
-    background-color: #068fff;
-  }
-  
-  *::-webkit-scrollbar-track {
-    border-radius: 5px;
-    background-color: #ddd;
-  }
-  
-  *::-webkit-scrollbar-thumb:hover {
-    border-radius: 5px;
-    background-color: #068fff;
-  }
+  width: 1vh;
+}
+
+*::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: #068fff;
+}
+
+*::-webkit-scrollbar-track {
+  border-radius: 5px;
+  background-color: #ddd;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  border-radius: 5px;
+  background-color: #068fff;
+}
+
